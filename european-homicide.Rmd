@@ -1,0 +1,65 @@
+---
+title: "European homicides"
+author: "Christian Kjær Nowak"
+date: "13/2/2020"
+output: word_document
+---
+Link til R for Data Science (svaret på alle spørgsmål)
+https://r4ds.had.co.nz
+
+
+
+# INdlæsning af pakker
+
+```{r}
+library(tidyverse)
+library(readxl)
+```
+
+# Indlæsning af data
+
+
+```{r}
+homicide <- read_csv("data/homicide-rates-across-western-europe-exam.csv")
+```
+
+
+
+# Visualisering
+
+```{r}
+ggplot(data = homicide) + 
+  geom_col(mapping = aes(x = Year, y = homicide_rate)) +
+  facet_wrap(~ Entity)
+```
+
+
+```
+```{r}
+ggsave("homicide_rate.pdf", width = 40, height = 20, units = "cm")
+
+```
+```
+
+```{r}
+```{r}
+```{r}
+
+```
+
+```{r}
+```{r}
+
+```
+
+```{r}
+```{r}
+```{r}
+
+```
+
+```{r}
+```{r}
+```{r}
+
+
